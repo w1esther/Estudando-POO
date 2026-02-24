@@ -1,3 +1,9 @@
+# hierarquia:
+    # LANCHONETE que tem os
+    #     PEDIDOS que dentre eles são escolhidos vários
+    #         PRODUTOS
+
+
 from rich import print
 from rich.table import Table
 
@@ -82,12 +88,18 @@ class Lanchonete:
 
         return tabela_pedidos
 
+# chamo a lanchonete que vai controlar tudo que tenho dentro de Pedidos
+
 lanche = Lanchonete()
+
+# pre definidos
 
 p1 = Produto("X-Burguer", 12)
 p2 = Produto("Suco", 5)
 p3 = Produto("Batata Frita", 8)
 p4 = Produto("Pizza", 30)
+
+# os pedidos terão acessos às funções da lanchonete
 
 pedido1 = lanche.novo_pedido()
 pedido1.adicionar_produto(p1)
