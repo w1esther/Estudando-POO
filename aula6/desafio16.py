@@ -2,6 +2,8 @@ from rich import print
 
 class Funcionario:
 
+    empresa = 'Curso em Video'
+
     def __init__(self, nome, setor, cargo, empresa):
         
         self.nome = nome
