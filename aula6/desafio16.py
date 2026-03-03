@@ -2,7 +2,7 @@ from rich import print
 
 class Funcionario:
 
-    empresa = 'Curso em Video'
+    empresa = 'Hostnet'
 
     def __init__(self, nome, setor, cargo, empresa):
         
@@ -13,7 +13,7 @@ class Funcionario:
 
     def apresentacao(self):
         
-        return f':wave: Olá sou [blue]{self.nome}[/] e sou {self.cargo} do setor {self.setor} da empresa {self.empresa}'
+        return f':wave: Olá sou [blue]{self.nome}[/] e sou {self.cargo} do setor {self.setor} da empresa {Funcionario.empresa}'
     
 c1 = Funcionario('Maria', 'Administração', 'Diretora', 'Curso em Video')
 
