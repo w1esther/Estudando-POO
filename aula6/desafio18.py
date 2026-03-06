@@ -4,6 +4,7 @@ from rich.panel import Panel
 # considere: 400g por pessoa
 # preco: R$82,40/kg
 
+#obs: melhoria - dividir calculos em métodos separados, colocar o conteudo em uma variável e não direto no Panel
 class Churrasco:
 
     def __init__(self, num_pessoas):
