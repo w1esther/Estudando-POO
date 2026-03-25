@@ -6,7 +6,7 @@ class BaseDeDados:
         
         self.__dados = {}
 
-    #Do acesso aos valores de __dados, posso acessar o metodo como um atributo, não posso configurar ele fora da classe
+    #Do acesso aos valores de __dados, posso acessar o metodo como um atributo, não posso configurar ele fora da classe 
     @property
     def dados(self):
 
